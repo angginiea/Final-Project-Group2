@@ -1,0 +1,166 @@
+  
+ <style type="text/css">
+  *{padding: 0; margin:0;}
+  body{
+   font-size: 12px;
+   font-family: times new roman, helvetica,sans-serif;
+   background-color:rgb(57, 90, 52);
+   color: white;    
+}
+
+  .fixed{ /* This css for the head and the menu*/
+   width: 100%;
+   position: fixed;
+   top: 0;
+  }
+
+.color_head{/* This is the head*/
+   text-align: center;
+   font-size: 70px;
+   width: 100%;
+   height: 100px;
+   padding: 30px 0px 30px 0px;
+   margin-bottom: 0;
+   background-image: url('https://images.unsplash.com/photo-1497619168626-9382280835a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+   text-transform: uppercase;
+   background-size: cover;
+  }
+  
+  .menu{/*This is the menu*/
+   margin-top:0px;
+   height: 50px;
+   width: 100%;
+   background-color: white;
+   text-align: center;
+   background-color: black;
+   margin-bottom: 150px;
+  }
+
+  .menu ul{/*to clear the list dots */
+   list-style: none;
+  }
+
+  .menu ul li{/*to make the list go horizontal*/
+   display: inline-block;
+   font-size: 30px;
+   margin:10px  40px;
+  }
+
+  .menu a:link {/* This is for the hyperlink attribute*/
+   color: white;
+  }
+
+  .menu a:hover{/* This is for the hyperlink attribute*/
+   font-size: 20px;
+  }
+
+  .menu a:visited{/* This is for the hyperlink attribute*/
+   color: white;
+  }
+
+
+.counter-fixed/*This css is for the content below the menu and head*/
+{
+  margin-top:210px;
+}
+
+
+.tr1/*For the div on the left side*/
+{
+    float: left;
+    background-color: rgb(147, 163, 108);
+    width: 20%;
+    height: 700px;
+}
+
+.tr2/*For the div on the middle side*/
+{
+    float: left;
+    background-color:rgb(108, 133, 78);
+    width: 60%;
+     height: 700px;        
+}
+
+
+.tr4/*For the div on the right side*/
+{
+    float:left;
+    background-color:rgb(147, 163, 108);
+    width: 20%;
+    height: 700px;
+}
+.tr5/*For the footer div on the bottom side*/
+{
+    float:left;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(47, 81, 51);
+}
+
+#topik1,#topik2, #topik3, #topik4/*For the each divs above *//*Recommended to put these CSS inside each div(tr1,tr2,tr4,tr5)*/
+{
+    float:left;
+    background: white;
+    width:40%;
+    height:40%;
+    margin-left:55px;
+    margin-top: 40px;
+    margin-right:10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),  0 10px 10px 0 rgba(0, 0, 0, 0.19);
+
+ }
+
+img {
+    margin-bottom:15px;
+    width: 100%;
+    height: 60%;
+    opacity: 1;
+  
+}
+
+
+#h1
+        {/* for the top-big title inside div on the left-side */
+            color:white;
+            font-size:40px;
+             padding-left: 5px;
+        }
+
+#h2/* for the bottom-big title inside div on the left-side */
+        {
+            color:white;
+            font-size:60px;
+             padding-left: 5px;
+        }
+        
+#text1
+        {/* for the text inside div on the left side */
+            color:white;
+            font-size:20px;
+            padding-left: 5px;
+        }
+#text2
+        {/*for the text on the footer div*/
+            color:white;
+            font-size:20px;
+            padding:10px;
+            text-align: center;
+        }
+#text3
+        {/* for the big title inside those 4 divs in the middle div */
+            color:black;
+            font-size:20px;
+            text-align:left;
+            padding-left: 5px;
+            font-weight:bold;
+        }
+        
+#text4
+        {/* for the texts inside those 4 divs in the middle div */
+            color:black;
+            font-size:20px;
+            text-align:left;
+            padding-left: 5px;
+            
+            
+        }
