@@ -9,7 +9,124 @@
       color: white;
     
 }
+   .fixed{* {
+    padding: 0; margin:0;
+}
+
+  body {
+      font-size: 12px;
+      font-family: times new roman, helvetica,sans-serif;
+      background-color:rgb(57, 90, 52);
+      color: white;
+    
+}
    .fixed{
+       /*---This css for the head and the menu---*/
+       width: 100%;
+       position: fixed;
+       top: 0;
+  }
+
+  .color_head{
+      /*---This is the header---*/
+      text-align: center;
+      font-size: 40px;
+      width: 100%;
+      height: 100px;
+      padding: 30px 0px 30px 0px;
+      margin-bottom: 0;
+      background-image: url('https://images.unsplash.com/photo-1497619168626-9382280835a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+      text-transform: uppercase;
+      background-size: cover;
+
+  }
+  
+     /*---This is navigation bar---*/
+.menu{/*This is the menu*/
+margin-top:0px;
+height: 100px;
+width: 100%;
+background-color: white;
+text-align: center;
+background-color: black;
+margin-bottom: 0px;
+}
+  }
+
+  .menu ul{
+      /*---to clear the list dots---*/
+   list-style: none;
+  }
+
+  .menu ul li{/*to make the list go horizontal*/
+display: inline-block;
+font-size: 20px;
+margin:0px  0px;
+width: 70%
+}
+
+
+  .menu a:link {
+      /*---This is for the hyperlink attribute---*/
+     color: white;
+  }
+  .menu a:hover{
+      /*---This is for the hyperlink attribute---*/
+      font-size: 20px;
+  }
+
+  .menu a:visited{
+      /*---This is for the hyperlink attribute---*/
+    color: white;
+  }
+
+
+/*---This is for left and right column---*/
+.column.side {
+  width: 28%; float: left; padding: 1%; margin-right: 2%; margin-left: 1%; margin-bottom: 2%; margin-top: 2%
+}
+
+/*---This Middle column----*/
+.column.middle {
+width: 28%; float: left; padding: 1%;  margin-right: 2%; margin-bottom: 2%; margin-top: 2%
+}
+
+/*---This Middle column----*/
+.column.right {
+width: 2%; float: left; padding: 1%; margin-top: 2%; margin-bottom: 2%; 
+}
+
+/*---Clear floats after the columns----*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tr5/*For the footer div on the bottom side*/
+{
+    float:left;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(47, 81, 51);
+}
+#text2
+        {/*for the text on the footer div*/
+            color:white;
+            font-size:20px;
+            padding:10px;
+            text-align: center;
+}
+
+.wrapper{
+width: 100%;
+}
+
+@media only screen and (max-width: 768px ) {
+body , .fixed, .color_head, .menu, .column.side, .column.middle,  .column.right, .row, .tr5, #text2, .wrapper {width: 100%;}
+
+
+}
        /*---This css for the head and the menu---*/
        width: 100%;
        position: fixed;
