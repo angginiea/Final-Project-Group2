@@ -1,5 +1,15 @@
-  
- <style type="text/css">
+<style type="text/css">
+
+.wrapper{
+width: 100%;
+}
+
+@media only screen and (max-width: 768px ) {
+body , .fixed, .color_head, .menu, .counter-fixed, .tr1, .tr2, .tr4, .tr5, #topik1, #topik2, #topik3, #topik4, img, #h1, #h2, #text1, #text2, #text3, #text4 {width: 100%;}
+
+
+}
+    
   *{padding: 0; margin:0;}
   body{
    font-size: 12px;
@@ -26,38 +36,44 @@
    background-size: cover;
   }
   
-  .menu{/*This is the menu*/
-   margin-top:0px;
-   height: 50px;
-   width: 100%;
-   background-color: white;
-   text-align: center;
-   background-color: black;
-   margin-bottom: 150px;
+      /*---This is navigation bar---*/
+.menu{/*This is the menu*/
+margin-top:0px;
+height: 100px;
+width: 100%;
+background-color: white;
+text-align: center;
+background-color: black;
+margin-bottom: 0px;
+}
   }
 
-  .menu ul{/*to clear the list dots */
+  .menu ul{
+      /*---to clear the list dots---*/
    list-style: none;
   }
 
   .menu ul li{/*to make the list go horizontal*/
-   display: inline-block;
-   font-size: 30px;
-   margin:10px  40px;
+display: inline-block;
+font-size: 20px;
+margin:0px  0px;
+width: 70%
+}
+
+
+  .menu a:link {
+      /*---This is for the hyperlink attribute---*/
+     color: white;
+  }
+  .menu a:hover{
+      /*---This is for the hyperlink attribute---*/
+      font-size: 20px;
   }
 
-  .menu a:link {/* This is for the hyperlink attribute*/
-   color: white;
+  .menu a:visited{
+      /*---This is for the hyperlink attribute---*/
+    color: white;
   }
-
-  .menu a:hover{/* This is for the hyperlink attribute*/
-   font-size: 20px;
-  }
-
-  .menu a:visited{/* This is for the hyperlink attribute*/
-   color: white;
-  }
-
 
 .counter-fixed/*This css is for the content below the menu and head*/
 {
@@ -78,7 +94,7 @@
     float: left;
     background-color:rgb(108, 133, 78);
     width: 60%;
-     height: 700px;        
+    height: 700px;        
 }
 
 
@@ -96,7 +112,6 @@
     height: 100px;
     background-color:rgb(47, 81, 51);
 }
-
 #topik1,#topik2, #topik3, #topik4/*For the each divs above *//*Recommended to put these CSS inside each div(tr1,tr2,tr4,tr5)*/
 {
     float:left;
@@ -144,8 +159,8 @@ img {
             color:white;
             font-size:20px;
             padding:10px;
-            text-align: center;
-        }
+            text-align: center
+}
 #text3
         {/* for the big title inside those 4 divs in the middle div */
             color:black;
