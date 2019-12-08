@@ -1,17 +1,26 @@
-*{padding: 0; margin:0;}
+*{
+padding: 0;
+margin:0;
+}
+
+.wrapper{
+width: 100%;
+}
+
 body{
 font-size: 12px;
 font-family: times new roman, helvetica,sans-serif;
-    background-color:rgb(57, 90, 52);
+background-color:rgb(57, 90, 52);
     color: white;
    
 }
 
 .fixed{ /* This css for the head and the menu*/
 width: 100%;
-position: fixed;
+position: absolute;
 top: 0;
 }
+
 .color_head{/* This is the head*/
 text-align: center;
 font-size: 70px;
@@ -34,32 +43,37 @@ text-align: center;
 background-color: black;
 margin-bottom: 150px;
 }
+
 .menu ul{/*to clear the list dots */
 list-style: none;
 }
+
 .menu ul li{/*to make the list go horizontal*/
 display: inline-block;
 font-size: 30px;
 margin:10px  40px;
 }
+
 .menu a:link {/* This is for the hyperlink attribute*/
 color: white;
 }
+
 .menu a:hover{/* This is for the hyperlink attribute*/
 font-size: 20px;
 }
+
 .menu a:visited{/* This is for the hyperlink attribute*/
 color: white;
 }
 
-.counter-fixed/*This css is for the content below the menu and head*/
-{
+.counter-fixed{/*This css is for the content below the menu and head*/
 margin-top:250px;
 }
-#para1/*This is for div which have contact title*/
-{
+
+#para1{/*This is for div which have contact title*/
 font-family: monospace; color: grey; font-size: 60px; text-align: center;
 }
+
 #text2
         {/*for the text on the footer div*/
             color:white;
@@ -67,8 +81,8 @@ font-family: monospace; color: grey; font-size: 60px; text-align: center;
             padding:10px;
             text-align: center;
         }
-.t01/*This is for table spesification*/
-{
+
+.t01{/*This is for table spesification*/
 width: 100%;
 text-align: center;
 font-size: 30px;
@@ -76,13 +90,100 @@ padding-bottom: 20px;
 padding-top: 20px;
 border: 2px solid black;
 }
-.td/*This is for data spesification in table*/
-{
+
+.td{/*This is for data spesification in table*/
 text-align: center;
 border: 1px solid black;
 }   
-.tr5/*For the footer div on the bottom side*/
-{
+
+.tr5{/*For the footer div on the bottom side*/
+    float:left;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(47, 81, 51);
+    margin-top: 100px
+}
+
+@media only screen and (max-width: 768px ) {
+}
+
+.color_head{/* This is the head*/
+text-align: center;
+font-size: 50px;
+width: 100%;
+height: 100px;
+padding: 30px 0px 30px 0px;
+margin-bottom: 0;
+background-image: url(images/green.jpg);
+text-transform: uppercase;
+background-size: cover;
+
+}
+
+.menu{/*This is the menu*/
+margin-top:0px;
+height: 230px;
+width: 100%;
+background-color: white;
+text-align: center;
+background-color: black;
+margin-bottom: 150px;
+}
+
+.menu ul{/*to clear the list dots */
+list-style: none;
+}
+
+.menu ul li{/*to make the list go horizontal*/
+display: inline-block;
+font-size: 30px;
+margin:10px  10px;
+width: 70%
+}
+
+.menu a:link {/* This is for the hyperlink attribute*/
+color: white;
+}
+
+.menu a:hover{/* This is for the hyperlink attribute*/
+font-size: 20px;
+}
+
+.menu a:visited{/* This is for the hyperlink attribute*/
+color: white;
+}
+
+.counter-fixed{/*This css is for the content below the menu and head*/
+margin-top:250px;
+}
+
+#para1{/*This is for div which have contact title*/
+display: none;
+}
+
+#text2
+        {/*for the text on the footer div*/
+            color:white;
+            font-size:30px;
+            padding:10px;
+            text-align: center;
+        }
+
+.t01{/*This is for table spesification*/
+width: 100%;
+text-align: center;
+font-size: 30px;
+padding-bottom: 20px;
+padding-top: 100px;
+border: 2px solid black;
+}
+
+.td{/*This is for data spesification in table*/
+text-align: center;
+border: 1px solid black;
+}   
+
+.tr5{/*For the footer div on the bottom side*/
     float:left;
     width: 100%;
     height: 100px;
